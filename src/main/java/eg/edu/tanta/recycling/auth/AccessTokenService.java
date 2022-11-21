@@ -1,6 +1,7 @@
 package eg.edu.tanta.recycling.auth;
 
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.oauth2.jwt.JwtClaimsSet;
@@ -14,7 +15,8 @@ import java.util.stream.Collectors;
 
 @AllArgsConstructor
 @Service
-public class TokenService {
+@Slf4j
+public class AccessTokenService {
 
   private final JwtEncoder encoder;
 

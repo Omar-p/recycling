@@ -1,0 +1,21 @@
+= ReOil Spring REST Docs Example
+
+This is an example output for a service running at http://localhost:8080:
+
+== POST API Example
+
+.request
+include::{snippets}/given-a-valid-confirmation-token-return200/http-request.adoc[]
+
+.response
+include::{snippets}/given-a-valid-confirmation-token-return200/http-response.adoc[]
+
+== GET API Example
+
+.request
+include::{snippets}/given-valid-user-dto-then-return201-created-and-location-header/http-request.adoc[]
+
+.response
+include::{snippets}/given-valid-user-dto-then-return201-created-and-location-header/http-response.adoc[]
+
+The data which we can see as part of documentation will be loaded from MockMvc Test case data
